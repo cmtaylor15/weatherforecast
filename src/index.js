@@ -30,6 +30,14 @@ function formatDate(date) {
     "Saturday",
   ];
   let day = days[date.getDay()];
+
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
   return `${day} ${hour}:${minutes}`;
 }
 
