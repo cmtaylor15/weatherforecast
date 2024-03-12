@@ -8,6 +8,7 @@ function updateWeather(response) {
   let wind = response.data.wind.speed;
   let timeElement = document.querySelector("#date-time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#icon");
 
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = Math.round(temperature);
@@ -15,6 +16,10 @@ function updateWeather(response) {
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${Math.round(wind)} km/h`;
   timeElement.innerHTML = formatDate(date);
+  iconElement.innerHTML = `<img
+                src="${response.data.condition.icon_url}"
+                class="weather-icon"
+              />`;
 }
 
 function formatDate(date) {

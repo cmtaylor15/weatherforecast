@@ -32,7 +32,7 @@
           <div>
             <h1 class="weather-city" id="city"></h1>
             <p class="weather-forecast-city">
-              <span id="date-time"></span>,
+              <span id="date-time"></span>
               <span id="condition"></span>
               <br />
               Humidity: <strong id="humidity"></strong>, Wind:
@@ -40,7 +40,12 @@
             </p>
           </div>
           <div class="weather-current-temp">
-            <div class="weather-icon">❄</div>
+            <div id="icon">
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                class="weather-icon"
+              />
+            </div>
             <div class="weather-temp-value" id="current-temp"></div>
             <div class="weather-unit">°C</div>
           </div>
