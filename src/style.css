@@ -42,6 +42,7 @@ a {
 
 .search-form-submit:hover {
   background-color: rgba(134, 185, 176, 0.6);
+  transition: background-color 0.2s linear;
 }
 
 main {
