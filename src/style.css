@@ -85,6 +85,29 @@ main {
   font-weight: bold;
 }
 
+.weekly-forecast {
+  margin: 20px;
+  display: flex;
+  text-align: center;
+}
+
+.weather-forecast-day {
+  font-size: 16px;
+  color: rgba(65, 50, 100, 0.8);
+  margin-bottom: 5px;
+}
+
+.weekly-forecast-temperature {
+  font-size: 15px;
+  color: #c86769;
+  margin-top: 4px;
+}
+
+.temperature-maximum {
+  font-weight: 700;
+  color: #c86769;
+}
+
 footer {
   border-top: 1px solid #f2f5f5;
   padding: 20px 0 0 0;
