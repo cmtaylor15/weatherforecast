@@ -37,6 +37,11 @@ a {
   border-radius: 5px;
   color: white;
   font-size: 14px;
+  margin-left: 5px;
+}
+
+.search-form-submit:hover {
+  background-color: rgba(134, 185, 176, 0.4);
 }
 
 main {
@@ -90,6 +95,9 @@ main {
   display: flex;
   justify-content: space-between;
   text-align: center;
+  background-color: rgba(242, 245, 245, 0.6);
+  padding: 15px;
+  border-radius: 5px;
 }
 
 .weather-forecast-day {
@@ -113,6 +121,7 @@ main {
 .temperature-maximum {
   font-weight: 800;
   color: #c86769;
+  margin-right: 5px;
 }
 
 footer {
